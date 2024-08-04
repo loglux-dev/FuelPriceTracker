@@ -56,6 +56,29 @@ Execute the script by running the following command:
     ```bash
     0 8 * * * /usr/bin/python3 /path/to/fuel_price_tracker.py
     ```
+
+# Data Format in Google Sheets
+The data retrieved by the FuelPriceTracker script is saved in a Google Sheet with the following structure:
+
+## Sheet Structure
+Header Row: The first row of the sheet contains the headers that describe the data in each column.
+Data Rows: Each subsequent row represents the data recorded for a specific date.
+## Columns
+Column A: Date - The date on which the data was fetched, formatted as YYYY-MM-DD.
+Column B: VLSFO - The current price of Very Low Sulphur Fuel Oil.
+Column C: LSMGO - The current price of Low Sulphur Marine Gas Oil.
+Column D: HSFO - The current price of High Sulphur Fuel Oil.
+
+## Example Sheet
+Date	VLSFO	LSMGO	HSFO
+2024-08-01	593	691	480
+2024-08-02	600	695	482
+2024-08-03	605	700	485
+
+## Data Logging
+Daily Updates: Each time the script is run, a new row is appended to the sheet, logging the current prices for each type of fuel along with the date.
+Consistent Order: The data is appended in a consistent order, ensuring that each column represents a specific type of fuel price over time.
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
