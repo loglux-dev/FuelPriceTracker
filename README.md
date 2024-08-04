@@ -70,10 +70,12 @@ Column C: LSMGO - The current price of Low Sulphur Marine Gas Oil.
 Column D: HSFO - The current price of High Sulphur Fuel Oil.
 
 ## Example Sheet
-Date	VLSFO	LSMGO	HSFO
-2024-08-01	593	691	480
-2024-08-02	600	695	482
-2024-08-03	605	700	485
+| Date       | VLSFO | LSMGO | HSFO |
+|------------|-------|-------|------|
+| 2024-08-01 | 593   | 691   | 480  |
+| 2024-08-02 | 600   | 695   | 482  |
+| 2024-08-03 | 605   | 700   | 485  |
+
 
 ## Data Logging
 Daily Updates: Each time the script is run, a new row is appended to the sheet, logging the current prices for each type of fuel along with the date.
